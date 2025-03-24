@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="jp">
+    <head>
+        <meta charset="UTF-8">
+        <title>picoとBLE接続テスト</title>
+        <link rel="stylesheet" href="style.css">
+      </head>
+    <body>
+        <h1 style="text-align: center">picoとBLE接続テスト</h1>
+
+        <div id="controller">
+            <input type="button" value="LEDをONにする" onclick='rasp_SendMessage("LED_ON")'/>
+            <input type="button" value="LEDをOFFにする" onclick='rasp_SendMessage("LED_OFF")'/><br>
+        </div>
+        <br><br><br>
+
+        <div>
+            <button id="connect">pico2wと接続</button>
+            <div id="log">pico2w未接続...</div>
+            picoのlog
+            <div id="pico"></div>
+        </div>
+
+    </body>
+    <script type="text/javascript" src="main.js"></script>
+</html>
