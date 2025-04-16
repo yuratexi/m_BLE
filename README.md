@@ -18,7 +18,7 @@ raspberry pi pico2w(以降pico2wと呼称)
 
 対応してるデバイスの例)Windows(Google Chrome,Microsoft Edge...) Android(Google Chrome...)  
 対応していないデバイスの例)iphone  
-※3/25現在の例 最新の情報は[Web Bluetooth API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Bluetooth_API)参照  
+※2025/3/25現在の例 最新の情報は[Web Bluetooth API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Bluetooth_API)参照  
 
 
 # 動作環境
