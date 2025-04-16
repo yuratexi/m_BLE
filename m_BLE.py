@@ -59,7 +59,6 @@ class BLEUART:
                 print("接続:", self._addr_to_str(addr))
                 self.connections.add(conn_handle)
             except Exception as e:
-                print("")
                 print("IRQ CONNECT 処理エラー:", e)
         elif event == _IRQ_DISCONNECT:
             try:
@@ -81,7 +80,6 @@ class BLEUART:
                     print("受信:", received)
                     self.on_rx(received)
             except Exception as e:
-                print("")
                 print("IRQ GATTS_WRITE 処理エラー:", e)
         #else:
             #print("不明なイベント:", event, "data:", data, "追加引数:", args[2:] if len(args) > 2 else None)
@@ -120,4 +118,5 @@ class BLEUART:
     def _addr_to_str(self, addr):
         """バイト列のアドレスを可読な文字列に変換する"""
         return ":".join("{:02X}".format(b) for b in addr)
+
 
