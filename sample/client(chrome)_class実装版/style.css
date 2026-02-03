@@ -1,0 +1,9 @@
+#log{
+    border:solid 0.1vw black;
+}
+
+#pico{
+    border:solid 0.1vw black;
+    height:20vh;
+    overflow: scroll;
+}
